@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,21 +7,23 @@
 }
 
 
-button, label, input {
+label, input {
     display: block;
     font-family: inherit;
-    margin: 0;
     box-sizing: border-box;
     width: 95%;
-    padding: 5px;
+}
+
+input {
     height: 30px;
+    margin-bottom: 10px;
 }
 
 body {
     color: #666;
     background-color: #EAEDF0;
     font-family: "Helvetica", "Arial", sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.7;
   
     display: flex;
@@ -31,6 +35,15 @@ form {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color:rgb(193, 77, 0)
+}
+
+h3 {
+    margin-top: 16px;
+    margin-left: 24px;
+}
 .signup-form {
     display: flex;
     justify-content: center;
@@ -44,6 +57,20 @@ form {
     height: 100%; 
     background: no-repeat center url(micheile-henderson-7NFwwp-vZk8-unsplash.jpg);
     background-size: cover;
+    position: relative;
+}
+
+.logo-header {
+    background-color: rgba(0, 0, 0, .3);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 25%;
+}
+
+h1 {
+    font: 4em 'Metal Mania', helvetica;
 }
 
 .info-container {
@@ -52,7 +79,16 @@ form {
     height: 100%;
     background-color: rgb(244, 244, 244);
     flex-direction: column;
-    justify-content: center;
+}
+
+.info-wrapper {
+    display: flex;
+    font-weight: 600;
+    font-size: 14px;
+    height: 30%;
+    align-items: center;
+    vertical-align: center;
+    padding-left: 10px;
 }
 
 .form-container {
@@ -61,18 +97,27 @@ form {
     box-shadow: #000;
     padding: 10px;
     box-shadow: 0px 2px 2px 1px rgb(235, 235, 235);
-    height: 40%;
+    min-height: 40%;
     display: flex;
     align-items: center;
+    flex-direction: column;
+}
+
+.form-container > h2 {
+    align-self: flex-start;
+    margin-bottom: 24px;
 }
 
 .form-row {
     display: flex;
-
+    min-width: 200px;
+    flex-direction: row;
+    margin-bottom: 12px;
+    gap: 45px;
 }
 
 .form-item {
-    width: 50%;
+    width: 35%;
 }
 
 .form-item label {
@@ -84,10 +129,57 @@ input {
     border: 1px solid rgb(244, 244, 244);
     background-color:rgb(244, 244, 244);
     border-radius: 5px;
+    box-shadow: 0px 1px 1px rgb(142, 142, 142);
+    padding-left: 5px;
+}
+
+input:required {
+    border: 1px solid rgb(144, 144, 144)
 }
 
 input:focus,
 input:hover {
+    outline: none;
     appearance: none;
-    border: 2px solid rgb(155, 155, 155)
+    border: 1px solid rgb(155, 155, 155);
+    box-shadow: 0px 1px 1px 1px rgb(142, 142, 142)
+}
+
+button[type='submit'] {
+    border: none;
+    border-radius: 5px;
+    margin-top: 16px;
+    margin-left: 24px;
+    width: 184px;
+    height: 45px;
+    color:rgb(255, 255, 255);
+    background-color: rgb(193, 77, 0);
+    cursor: pointer;
+    box-shadow: 0px 2px 2px 1px rgb(202, 201, 201);
+}
+
+button[type="submit"]:hover {
+    border: 2px solid rgb(122, 49, 0);
+}
+
+.error + span {
+    color: rgb(200, 0, 0);
+}
+
+input.error {
+    border: 2px solid rgb(200, 0, 0);
+}
+@media (max-width: 700px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .signup-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .image-container {
+        width: 60%;
+    }
 }
