@@ -11,7 +11,7 @@ label, input {
     display: block;
     font-family: inherit;
     box-sizing: border-box;
-    width: 95%;
+    width: 100%;
 }
 
 input {
@@ -44,6 +44,7 @@ h3 {
     margin-top: 16px;
     margin-left: 24px;
 }
+
 .signup-form {
     display: flex;
     justify-content: center;
@@ -55,6 +56,13 @@ h3 {
 .image-container {
     width: 40%;
     height: 100%; 
+    display: flex;
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
     background: no-repeat center url(micheile-henderson-7NFwwp-vZk8-unsplash.jpg);
     background-size: cover;
     position: relative;
@@ -85,7 +93,7 @@ h1 {
     display: flex;
     font-weight: 600;
     font-size: 14px;
-    height: 30%;
+    min-height: 30%;
     align-items: center;
     vertical-align: center;
     padding-left: 10px;
@@ -97,7 +105,6 @@ h1 {
     box-shadow: #000;
     padding: 10px;
     box-shadow: 0px 2px 2px 1px rgb(235, 235, 235);
-    min-height: 40%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -117,12 +124,9 @@ h1 {
 }
 
 .form-item {
-    width: 35%;
+    width: 45%;
 }
 
-.form-item label {
-    width: 85%;
-}
 
 input {
     appearance: none;
@@ -145,6 +149,9 @@ input:hover {
     box-shadow: 0px 1px 1px 1px rgb(142, 142, 142)
 }
 
+.spacing {
+    min-height: 30%;
+}
 button[type='submit'] {
     border: none;
     border-radius: 5px;
@@ -175,11 +182,26 @@ input.error {
     }
 
     .signup-form {
+        height: 100%;
+        display: flex;
         flex-direction: column;
         width: 100%;
     }
 
+    .logo-header {
+        width: 60%;
+    }
+
     .image-container {
+        height: 200px;
+        width: 100%;
+    }
+
+    .hero-image {
+        background: no-repeat center url(micheile-henderson-7NFwwp-vZk8-unsplash.jpg);
+        background-size: cover;
+        position: relative;
+        height: 100%;
         width: 60%;
     }
 }
