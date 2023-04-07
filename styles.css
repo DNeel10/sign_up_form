@@ -119,8 +119,7 @@ h1 {
     display: flex;
     min-width: 200px;
     flex-direction: row;
-    margin-bottom: 12px;
-    gap: 45px;
+    justify-content: space-between;
 }
 
 .form-item {
