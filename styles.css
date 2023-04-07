@@ -156,7 +156,7 @@ button[type='submit'] {
     border: none;
     border-radius: 5px;
     margin-top: 16px;
-    margin-left: 24px;
+    margin-left: 10px;
     width: 184px;
     height: 45px;
     color:rgb(255, 255, 255);
@@ -189,7 +189,7 @@ input.error {
     }
 
     .logo-header {
-        width: 60%;
+        width: 100%;
     }
 
     .image-container {
@@ -197,11 +197,20 @@ input.error {
         width: 100%;
     }
 
+    .info-container {
+        width: 100%;
+    }
+
+    .info-wrapper {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
     .hero-image {
         background: no-repeat center url(micheile-henderson-7NFwwp-vZk8-unsplash.jpg);
         background-size: cover;
         position: relative;
         height: 100%;
-        width: 60%;
+        width: 100%;
     }
 }
