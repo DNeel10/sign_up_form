@@ -42,7 +42,7 @@ a {
 
 h3 {
     margin-top: 16px;
-    margin-left: 24px;
+    margin-left: 12px;
 }
 
 .signup-form {
@@ -179,6 +179,10 @@ input:invalid:not(:focus):not(:placeholder-shown) {
 @media (max-width: 700px) {
     .form-row {
         flex-direction: column;
+    }
+
+    .form-item {
+        width: 75%;
     }
 
     .signup-form {
