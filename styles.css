@@ -49,13 +49,14 @@ h3 {
     display: flex;
     justify-content: center;
     width: 70%;
-    margin-top: 16px;
+    /* margin-top: 16px; */
     height: 75vh;
 }
 
 .image-container {
     width: 40%;
-    height: 100%; 
+    min-height: 100%; 
+    flex-basis: auto;
     display: flex;
     position: relative;
 }
@@ -104,7 +105,7 @@ h1 {
     background-color: rgb(255, 255, 255);
     box-shadow: #000;
     padding: 10px;
-    box-shadow: 0px 2px 2px 1px rgb(235, 235, 235);
+    box-shadow: 0px 2px 2px 1px rgb(200, 200, 200);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -177,6 +178,7 @@ input:invalid:not(:focus):not(:placeholder-shown) {
 }
 
 @media (max-width: 700px) {
+    
     .form-row {
         flex-direction: column;
     }
@@ -203,6 +205,7 @@ input:invalid:not(:focus):not(:placeholder-shown) {
 
     .info-container {
         width: 100%;
+        padding: 10px;
     }
 
     .info-wrapper {
